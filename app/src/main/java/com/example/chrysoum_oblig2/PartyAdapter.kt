@@ -49,6 +49,7 @@ class PartyAdapter(val partyList: MutableList<AlpacaParty>): RecyclerView.Adapte
 
         holder.itemTextView2.text = "Leader: ".plus(current.leader)
 
+
         val result: String = current.getVotes().toString()
         val resultAverage: String = current.getAverage().toString()
         val resultText = "Votes: ".plus(result).plus(" - ").plus(resultAverage).plus(" %")
@@ -59,5 +60,3 @@ class PartyAdapter(val partyList: MutableList<AlpacaParty>): RecyclerView.Adapte
 
 @GlideModule
 class GlideAppName : AppGlideModule()
-
-
